@@ -11,16 +11,20 @@ Github Setup
 6. Sett default branch to be development (To protect Production): Go to Your Code -> Settings -> Default Banch: Development
 7. Checkout to development ("git checkout development")
 
+Pre-requirements:
+- Install Extention: Jupyter Render, so Jupyter Notebook could render images
+
 Working Directory Setup
 1. Ensure you are located in development branch: ("git checkout development")
 2. Ensure your development branch is up to date ("git pull origin development")
 3. Create your working branch from development ("git checkout -b setting_up_environment")
 4. Create the Virtual Environment ("virtualenv env")
 5. Activate Virtual Environment ("source env/bin/activate")
-6. Create requirements.txt
+6. Create requirements.txt (nbformat is necessary to render plotly)
     duckdb==0.9.2
     pandas==2.1.4
     plotly==5.18.0
+    nbformat==5.9.2
 7. Install requirements ("pip install -r requirements.txt")
 8. Create main.py and ensure it is connected with the Python environment
 9. Create main.ipynb and ensure it is connected with the Python environment ("Go UpRight and click on 'Select Kernel', choose our env")
