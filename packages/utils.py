@@ -1,9 +1,9 @@
 import duckdb
+from packages import constants
 
-DATABASE_NAME = 'database/UserLogDB.db'
 DAYS_NUMBER = 2
 
-conn = duckdb.connect(DATABASE_NAME)
+conn = duckdb.connect(constants.DATABASE_NAME)
 
 def CALCULATE_USE_PERCENTAGE(days: int = DAYS_NUMBER, until: bool = False):
     comparator = '<=' if until else '='

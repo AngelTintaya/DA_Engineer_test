@@ -161,3 +161,7 @@ cython_debug/
 
 # Tracker Mac Files
 .DS_Store
+
+# Track DB Files
+*.db
+*.db.wal
